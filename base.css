@@ -2,16 +2,31 @@
     background-color: #333;
     overflow: hidden;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9998;
 }
 
 .topnav a {
-    float: left;
     display: block;
+    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 1.2vw;
     text-decoration: none;
     font-size: 17px;
+}
+
+.logo-header img {
+    height: 53px;
+    width: auto;
+}
+
+.logo-header {
+    padding: 0 !important;
+    margin-right: 28px;
+    margin-left: 14px;
 }
 
 .topnav a:hover, .topnav a.active:hover {
@@ -21,12 +36,80 @@
 }
 
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
 }
 
 .topnav .hamburger_menu {
     display: none;
+}
+
+.banniere {
+    background: url("img/bannière.png");
+    background-size: cover;
+    height: 40vh;
+    margin-top: 53px;
+}
+
+.banniere h1{
+    height: 40vh;
+    font-size: 2.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 5px -5px 2px #9a9a9a;
+}
+
+.banniere #accueil::before {
+    content:'#ACCUEIL';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
+}
+
+.banniere #actualités::before {
+    content:'#ACTUALITÉS';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
+}
+
+.banniere #admin::before {
+    content:'#ADMINISTRATEUR';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
+}
+
+.banniere #login::before {
+    content:'#CONNEXION / INSCRIPTION';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
+}
+
+.banniere #contact::before {
+    content:'#CONTACT';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
+}
+
+.banniere #formation::before {
+    content:'#FORMATION';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
+}
+
+.banniere #mon_compte::before {
+    content:'#MON COMPTE';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
+}
+
+.banniere #postuler::before {
+    content:'#POSTULER';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
+}
+
+.banniere #promotion::before {
+    content:'#PROMOTION';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
+}
+
+.banniere #remerciement::before {
+    content:'#REMERCIEMENTS';
+    -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
 }
 
 @media screen and (max-width: 983px) {
@@ -38,7 +121,7 @@
 }
 
 @media screen and (max-width: 983px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: absolute;}
     .topnav.responsive a.hamburger_menu {
         position: absolute;
         right: 0;
@@ -49,4 +132,110 @@
         display: block;
         text-align: left;
     }
+}
+
+footer {
+    width:100%;
+    padding-top:20px;
+    margin-top: 20px;
+}
+
+.ct-footer {
+    background-color: #333;
+}
+
+.ct-footer-post {
+    background: #222;
+    min-height: 45px;
+    height: auto;
+}
+
+.ct-footer-post p {
+    color: #fff;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+.logo-footer {
+    width: 230px;
+    height: 100px;
+    border-radius: 1rem;
+}
+
+@media (min-width:768px) {
+    .ct-footer-post p {
+        display: inline-block;
+        text-align: center;
+    }
+    .ct-footer-post p + p {
+        padding-left: 50px;
+        text-align: center;
+    }
+}
+
+@media (min-width:992px) {
+    .ct-footer-post .inner-left {
+        float: left
+    }
+    .ct-footer-post .inner-right {
+        float: right
+    }
+}
+
+@media (max-width:991px) {
+    .ct-footer-post {
+        text-align: center;
+    }
+    .logo-face {
+        margin-bottom: 20px;
+    }
+}
+
+.logo-footer {
+    float: left;
+}
+
+address {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+}
+
+address span {
+    font-weight: 600;
+}
+
+address a {
+    color: #fff;
+}
+
+address a:hover {
+    text-decoration: none;
+    color: #9a9a9a;
+}
+
+@media (max-width:767px) {
+    address {
+        padding-top: 30px;
+    }
+}
+
+.cRetour img {
+    height: 50px;
+    opacity: 0.3;
+}
+
+.cRetour:hover img {
+    transition:all ease-in .2s;
+    opacity: 1;
+}
+
+.cRetour {
+    z-index:99999;
+    transition:all ease-in .2s;
+    position: fixed;
+    cursor: pointer;
+    bottom: 50px;
+    right: 10px;
+    display: none;
 }
