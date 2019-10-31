@@ -113,7 +113,7 @@
     -webkit-box-reflect: below -10px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.40)));
 }
 
-@media screen and (max-width: 983px) {
+@media screen and (max-width: 1208px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.hamburger_menu {
         float: right;
@@ -121,7 +121,7 @@
     }
 }
 
-@media screen and (max-width: 983px) {
+@media screen and (max-width: 1208px) {
     .topnav.responsive {position: absolute;}
     .topnav.responsive a.hamburger_menu {
         position: absolute;
