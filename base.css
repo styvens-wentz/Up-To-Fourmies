@@ -247,6 +247,12 @@ address a:hover {
     }
 }
 
+@media(max-width: 800px)  {
+    #login {
+        text-align: center;
+    }
+}
+
 .cRetour img {
     height: 50px;
     opacity: 0.3;
