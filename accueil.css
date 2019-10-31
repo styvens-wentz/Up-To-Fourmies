@@ -55,7 +55,7 @@ body {
     z-index: 1000;
     border: 3px solid rgba(255,255,255,0.9);
     border-radius: 50%;
-    transition: background-color linear 0.1s;
+    transition: background-color linear .8s;
 }
 .sp-slideshow input:checked + label {
     background-color: #fff;
@@ -155,7 +155,7 @@ input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {
     box-sizing: border-box;
     height: 100%;
     float: left;
-    opacity: 0.4;
+    opacity: 0.2;
     transition: opacity ease-in 0.4s 0.8s;
 }
 
