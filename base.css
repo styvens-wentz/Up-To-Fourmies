@@ -49,6 +49,7 @@
     background-size: cover;
     height: 40vh;
     margin-top: 53px;
+    margin-bottom: 20px;
 }
 
 .banniere h1{
@@ -191,22 +192,44 @@ footer {
     }
 }
 
+.ct-footer-meta * {
+    display: flex;
+    justify-content: center;
+}
+
 .logo-footer {
     float: left;
 }
 
+
+@media(max-width: 918px) {
+    .ct-footer-meta *:not(span) {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .banniere {
+        background-position: -180px;
+    }
+}
+
 address {
     color: #fff;
-    display: inline-block;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 address span {
     font-weight: 600;
+    font: initial;
 }
 
 address a {
     color: #fff;
+    font-weight: bolder;
 }
 
 address a:hover {
@@ -217,6 +240,10 @@ address a:hover {
 @media (max-width:767px) {
     address {
         padding-top: 30px;
+    }
+
+    .banniere {
+        background-position: -450px;
     }
 }
 
