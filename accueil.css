@@ -174,7 +174,7 @@ input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {
 }
 
 span {
-    color: #b2d8ff;
+    color: indigo;
     font-weight: bold;
 }
 
@@ -239,5 +239,9 @@ input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3){
 @media screen and (max-width: 505px){
     .sp-slideshow {
         height: 1000px;
+    }
+
+    #chiffre div {
+        flex-direction: column;
     }
 }
