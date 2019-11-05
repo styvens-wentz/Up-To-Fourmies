@@ -178,6 +178,26 @@ span {
     font-weight: bold;
 }
 
+#chiffre {
+    display: flex;
+    flex-direction: column;
+}
+
+#chiffre div {
+    display: flex;
+}
+
+#chiffre p {
+    display: flex;
+    flex-direction: column !important;
+    font-size: 35px;
+}
+
+#chiffre p span {
+    color: indigo;
+    font-size: 35px;
+}
+
 .sp-slider h1 {
     text-align: center;
     font-size: 3rem;
